@@ -12,7 +12,7 @@ def frequencies(patterns: list[str] | set[str], data: str | list[str]) -> dict:
        freq[pattern] += data.count(pattern)
     return freq
 
-def binary_pair_encoder(data: str):
+def byte_pair_encoder(data: str):
     data_dict = frequencies(set(data), data)
     last = False
     while last != data_dict:
