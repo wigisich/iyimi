@@ -1,4 +1,3 @@
-
 # Function for merging the list of strings into a single, long string with ending sequences
 def flatten(dataset: list[str]) -> str:
     data_flat = [ [word + "</w>" for word in sentence.split(" ")] for sentence in dataset]
